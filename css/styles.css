@@ -856,8 +856,14 @@ p {
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+  .btn-menu-hamburger {
+    position: absolute;
+    stroke: #2e2f42;
+    border: none;
+    background-color: transparent;
+  }
 }
-@media (min-width: 428px) and (max-width: 768px) {
+@media (min-width: 429px) and (max-width: 768px) {
   .container {
     min-width: 768px;
   }

@@ -820,9 +820,9 @@ p {
 */
   .modal-header-box {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
+    top: 0%;
+    left: 0%;
+    transform: translate(0%, 0%) scale(1);
     width: 428px;
     min-height: 796px;
     padding: 80px 40px 40px 40px;

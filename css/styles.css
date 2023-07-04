@@ -787,6 +787,11 @@ p {
   body {
     background-color: #ff5100;
   }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
   .visually-hidden-mob {
     position: absolute;
     width: 1px;
@@ -811,6 +816,15 @@ p {
     right: 0%;
     margin: 24px;
     padding: 0;
+  }
+
+  }
+  .modal-order {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-0%, -0%) scale(1);
+    
   }
 
   /**

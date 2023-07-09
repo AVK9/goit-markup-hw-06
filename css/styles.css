@@ -191,8 +191,25 @@ p {
 
 .section-doing {
   display: none;
+  padding-bottom: 120px;
 }
-
+.doing-head {
+  padding-top: 0;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
+  margin-bottom: 72px;
+}
+.section-doing-list {
+  display: flex;
+  gap: 24px;
+}
+.section-doing-list-li {
+  width: calc((1158px - 48px) / 3);
+}
 /**
   |============================
   | 4 section team
@@ -670,9 +687,23 @@ p {
   .feature-name {
     font-size: 20px;
   }
-  /* 3 section section-doing  DESKTOP*/
+  /* 3  section-doing DESKTOP*/
+  .section-doing {
+    display: flex;
+  }
+  /* 4 - 5 section team  DESKTOP*/
+  .team-box,
+  .customers-box {
+    max-width: 1128px;
+    padding: 120px 0;
+  }
+  .section-team-list,
+  .customers-list {
+    flex-wrap: nowrap;
+    gap: 24px;
+    margin: 0 auto;
+  }
 }
-
 /**
   |============================
   | modal header nav
@@ -756,36 +787,6 @@ p {
   align-items: flex-start;
   gap: 56px;
 }
-
-
-/**
-  |============================
-  | OLD 3 section section-doing
-  |============================
-*/
-/*
-.section-doing {
-  padding-top: 110px;
-  padding-bottom: 120px;
-}
-.doing-head {
-  padding-top: 0;
-  font-size: 36px;
-  line-height: 1.11;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-transform: capitalize;
-  color: var(--dark);
-  margin-bottom: 72px;
-}
-.section-doing-list {
-  display: flex;
-  gap: 24px;
-}
-.section-doing-list-li {
-  width: calc((1158px - 48px) / 3);
-}
-*/
 
 /**
   |============================

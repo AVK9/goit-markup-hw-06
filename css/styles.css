@@ -103,7 +103,6 @@ p {
   |============================
 */
 .section-zakaz-service {
-  justify-content: center;
   background-color: var(--dark);
   padding: 112px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -169,7 +168,6 @@ p {
 }
 .feature-name {
   color: var(--dark);
-  margin-bottom: 8px;
   text-align: center;
   font-size: 36px;
   font-weight: 700;
@@ -182,7 +180,7 @@ p {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  letter-spacing: 0.32px;
+  letter-spacing: 0.2px;
 }
 
 /**
@@ -463,6 +461,12 @@ p {
     max-width: 428px;
   }
 }
+/**
+  |============================
+  | min-width: 768px TABLET
+  |============================
+*/
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -610,6 +614,67 @@ p {
 }
 /**
   |============================
+  | min-width: 1158px DESKTOP
+  |============================
+*/
+@media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+  .menu-main-address {
+    flex-direction: row;
+    gap: 40px;
+  }
+  .header-div {
+    padding: 24px;
+  }
+  .menu-main {
+    margin-left: 76px;
+  }
+  .kontakts-mail {
+    font-size: 16px;
+  }
+  /* section-zakaz-service DESKTOP*/
+  .section-zakaz-service {
+    max-width: 1440px;
+    min-height: 600px;
+    padding-top: 188px;
+  }
+  .zakaz-service-name {
+    font-size: 56px;
+    min-width: 496px;
+    padding-bottom: 48px;
+  }
+  /* section-features DESKTOP*/
+  .section-features {
+    padding: 120px 0;
+  }
+
+  .features-icon-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+  }
+  .section-features-list {
+    gap: 24px 24px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+  }
+  .secfeat-list-li {
+    max-width: calc((100% - 72px) / 4);
+  }
+  .feature-name {
+    font-size: 20px;
+  }
+  /* 3 section section-doing  DESKTOP*/
+}
+
+/**
+  |============================
   | modal header nav
   |============================
 */
@@ -692,30 +757,6 @@ p {
   gap: 56px;
 }
 
-/**
-  |============================
-  | OLD  Second section section-features
-  |============================
-
-
-.section-features-list {
-  display: flex;
-  gap: 24px;
-}
-.secfeat-list-li {
-  width: calc((100% - 72px) / 4);
-}
-.features-icon-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 112px;
-  background-color: #f4f4fd;
-  border-radius: 4px;
-  margin-bottom: 8px;
-}
-
-*/
 
 /**
   |============================

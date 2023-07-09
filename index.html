@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
             <nav class="header-div-nav">
                 <a class="logotip link" href="./index.html">Web<span class="logotip-part-two">Studio</span></a>
     
-                <ul class="menu-main list visually-hidden-mob">
+                <ul class="menu-main list">
                     <li>
                         <a class="menu-header menu-header-check link" href="./index.html">Studio</a>
                     </li>
@@ -31,8 +31,8 @@
                 </ul>
             </nav>
     
-            <address class="kontakts visually-hidden-mob">
-                <ul class="menu-main list">
+            <address class="kontakts">
+                <ul class="menu-main-address list">
                     <li>
                         <a class="kontakts-mail link menu-header" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
@@ -44,7 +44,7 @@
             <button data-modal-open-fead class=" btn-menu-hamburger visually-hidden-tab visually-hidden-pc container"
                 type="button">
                 <svg class="" width="32" height="22">
-                    <use href="./images/icons.svg#icon-menu-hamb"></use>
+                    <use href="./images/icons.svg#icon-hamb"></use>
                 </svg>
             </button>
         </div>
@@ -53,7 +53,7 @@
     <main>
        <section class="section-zakaz-service">
         <div class="container">
-          <h1 class="zakaz-service-name">Effective Solutions for Your Business</h1>
+          <h1 class="zakaz-service-name">Effective Solutions <br> for Your Business</h1>
           <button data-modal-open class="button-main" type="button">Order Service</button>  
         </div>
       
@@ -64,7 +64,7 @@
                 <h2 class="visually-hidden">Features</h2>
                 <ul class="section-features-list list ">
                     <li class="secfeat-list-li">
-                        <div class="features-icon-box visually-hidden-mob">
+                        <div class="features-icon-box">
                         <svg width="64" height="64" class="button-modal-close-icon">
                             <use href="./images/icons.svg#icon-antenna"></use>
                         </svg>
@@ -75,7 +75,7 @@
                 </p>
                     </li>
                     <li class="secfeat-list-li">
-                        <div class="features-icon-box visually-hidden-mob">
+                        <div class="features-icon-box">
                             <svg width="64" height="64" class="button-modal-close-icon">
                                 <use href="./images/icons.svg#icon-clock"></use>
                             </svg>
@@ -85,7 +85,7 @@
                 </p>
                     </li>
                     <li class="secfeat-list-li">
-                        <div class="features-icon-box visually-hidden-mob">
+                        <div class="features-icon-box">
                             <svg width="64" height="64" class="button-modal-close-icon">
                                 <use href="./images/icons.svg#icon-diagram"></use>
                             </svg>
@@ -95,7 +95,7 @@
                 </p>
                     </li>
                     <li class="secfeat-list-li">
-                        <div class="features-icon-box visually-hidden-mob">
+                        <div class="features-icon-box">
                             <svg width="64" height="64" class="button-modal-close-icon">
                                 <use href="./images/icons.svg#icon-astronaut"></use>
                             </svg>
@@ -108,7 +108,7 @@
         </div>
        </section>
 
-       <section class="section-doing visually-hidden-mob">
+       <section class="section-doing">
         <div class="container">
             <h2 class="doing-head">What are we doing</h2>
                <ul class="section-doing-list list">
@@ -342,7 +342,7 @@
             </div>
             <div class="footer-part-cocial">
                 <p class="footer-part-name">Social media</p>
-                <ul class="footer-part-social list">
+                <ul class="footer-part-social-list list">
                     <li class="footer-social-item">
                         <a class="footer-social-link" href="">
                             <svg class="footer-social-icon" width="24" height="24">
@@ -461,10 +461,10 @@
              </form>
         </div>
     </div>
-    <!--Modal header nav-->
-    <div data-modal-fead class="modal-section-nav is-hidden-nav">
+    <!--Modal header nav
+    <div data-modal-fead class="modal-section-nav">
         <div class="modal-header-box">
-            <button data-modal-close-fead class="button-modal-close" type="button">
+            <button data-modal-close-fead class="button-modal-close2" type="button">
                 <svg class="button-modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1">
                     </use>
@@ -485,8 +485,9 @@
                     </li>
                 </ul>
                 </div>
+                
                 <div class="modal-header-kont">    
-                    <div  class="kontakts">
+                    <div  class="kontakts2">
                     <ul class="menu-main list menu-main-modal">
 
                         <li>
@@ -497,7 +498,7 @@
                         </li>
                     </ul>
                         
-                    <ul class="list social-menu-modal">
+                    <ul class="list social-menu-modal-nav">
                         <li class="footer-social-item">
                             <a class="footer-social-link" href="">
                                 <svg class="footer-social-icon" width="24" height="24">
@@ -529,15 +530,17 @@
                     </ul>
                 
                 </div>
-                
+                -->
                 </div>
             </div>
 
         </div>
     </div>
-
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/modal2.js"></script>
-<script src="./js/mobile-menu.js"></script>
+<script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

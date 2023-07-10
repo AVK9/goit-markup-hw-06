@@ -692,16 +692,28 @@ p {
     display: flex;
   }
   /* 4 - 5 section team  DESKTOP*/
-  .team-box,
-  .customers-box {
-    max-width: 1128px;
+  .section-team,
+  .section-customers {
     padding: 120px 0;
   }
+
   .section-team-list,
   .customers-list {
+    min-width: 1128px;
     flex-wrap: nowrap;
     gap: 24px;
     margin: 0 auto;
+  }
+  /*footer DESKTOP*/
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-box {
+    flex-wrap: nowrap;
+  }
+  .footer-part-cocial {
+    margin-left: 96px;
+    margin-right: 56px;
   }
 }
 /**

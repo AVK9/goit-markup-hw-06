@@ -41,8 +41,7 @@
                     </li>
                 </ul>
             </address>
-            <button data-modal-open-fead class=" btn-menu-hamburger container"
-                type="button">
+            <button class="menu-toggle js-open-menu btn-menu-hamburger container" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="" width="32" height="22">
                     <use href="./images/icons.svg#icon-hamb"></use>
                 </svg>
@@ -461,75 +460,23 @@
              </form>
         </div>
     </div>
-    
-    <div data-modal-fead class="modal-section-nav is-hidden">
-        <div class="modal-header-box">
-            <button data-modal-close-fead class="button-modal-close" type="button">
+    <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
                 <svg class="button-modal-close-icon" width="8" height="8">
                     <use href="./images/icons.svg#icon-close-black-18dp-2-1">
                     </use>
                 </svg>
             </button>
-            <div class="modal-header-main">
-                <div class="header-div-nav">
+        
+            <ul class="mobile-menu">
+                <li><a class="linked" href="./index.html">Studio</a></li>
+                <li><a class="linked" href="./portfolio.html">Portfolio</a></li>
+                <li><a class="linked" href="">Contacts</a></li>
                 
-                <ul class="menu-main list menu-main-modal">
-                    <li>
-                        <a class="menu-header link menu-header-modal" href="./index.html">Studio</a>
-                    </li>
-                    <li>
-                        <a class="menu-header link menu-header-modal" href="./portfolio.html">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="menu-header link menu-header-modal" href="">Contacts</a>
-                    </li>
-                </ul>
-                </div>
-                
-                <div class="modal-header-kont">    
-                    <div  class="kontakts">
-                    <ul class="menu-main list menu-main-modal">
+            </ul>
+    </div>
+    
 
-                        <li>
-                            <a class="kontakt-tel-modal link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                        </li>
-                        <li>
-                            <a class="kontakt-tel-modal link kontakt-mail-modal" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                        </li>
-                    </ul>
-                        
-                    <ul class="list social-menu-modal-nav">
-                        <li class="footer-social-item">
-                            <a class="footer-social-link" href="">
-                                <svg class="footer-social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#instagram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-social-link" href="">
-                                <svg class="footer-social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#twitter"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-social-link" href="">
-                                <svg class="footer-social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#facebook"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="footer-social-item">
-                            <a class="footer-social-link" href="">
-                                <svg class="footer-social-icon" width="24" height="24">
-                                    <use href="./images/icons.svg#linkedin"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                
-    </div>  
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>

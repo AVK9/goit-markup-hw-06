@@ -1067,7 +1067,8 @@ p {
   padding: 80px 40px 40px 40px;
   background-color: #ffffff;
   z-index: 999;
-
+  display: flex;
+  flex-direction: column;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
   box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
@@ -1088,11 +1089,10 @@ p {
 .mobile-menu {
   padding: 0;
   margin: 0;
-  list-style: none;
   margin-bottom: auto;
 }
 
-.mobile-menu .linked {
+.linked {
   display: block;
   padding-bottom: 40px;
   text-decoration: none;

@@ -1137,6 +1137,7 @@ p {
   flex-wrap: wrap;
   gap: 56px;
   margin-top: 48px;
+  margin-bottom: 40px;
 }
 
 .modal-header-main {

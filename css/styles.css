@@ -114,6 +114,12 @@ p {
   background-position: center;
   background-size: cover;
 }
+@media (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
+  .section-zakaz-service {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/bg-people-office@2x.jpg);
+  }
+}
 .zakaz-service-name {
   font-size: 36px;
   line-height: 1.07;
@@ -520,24 +526,59 @@ p {
   |============================
 */
 .section-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 .section-portfolio-filtr {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  margin-bottom: 48px;
+}
+@media (min-width: 768px) {
+  .section-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+  .section-portfolio-filtr {
+    justify-content: center;
+    gap: 24px;
+  }
+}
+@media (min-width: 1158px) {
+  .section-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
 }
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
 }
 .portfolio-list-li {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
+@media (min-width: 768px) {
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+  .portfolio-list-li {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (min-width: 1158px) {
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+  .portfolio-list-li {
+    width: calc((100% - 48px) / 3);
+  }
+}
+
 .portfolio-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
